@@ -13,12 +13,7 @@ h1, h2 {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   align-self: auto;
-
-  grid-template-columns: 1fr;
-  display: grid;
   grid-template-areas:
     "banner"
     "main";
@@ -26,10 +21,8 @@ body {
 
 .main-grid {
   list-style-type: none;
-  padding: 0;
-
   display: grid;
-  grid-template-columns: repeat(auto-fit);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: .75rem;
 }
 
@@ -40,5 +33,6 @@ header {
 main {
   grid-area: main;
 }
+
 
 /* font-family: "Merriweather", serif; */
