@@ -17,7 +17,6 @@ body {
   padding: 0;
   align-self: auto;
 
-  gap: .75rem;
   grid-template-columns: 1fr;
   display: grid;
   grid-template-areas:
@@ -25,8 +24,17 @@ body {
     "main";
 }
 
+.main-grid {
+  list-style-type: none;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+  gap: .75rem;
+}
+
 header {
-  grid-area: header;
+  grid-area: banner;
 }
 
 main {
