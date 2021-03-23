@@ -8,22 +8,36 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2 {
-  font-style: italic;
-}
-
 body {
-  align-self: auto;
+  margin: 0;
+  padding: 0;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
   grid-template-areas:
-    "banner"
-    "main";
+  "banner"
+  "main"
 }
 
 .main-grid {
   list-style-type: none;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  gap: .75em;
+}
+
+h1, h2 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 header {
@@ -33,6 +47,5 @@ header {
 main {
   grid-area: main;
 }
-
 
 /* font-family: "Merriweather", serif; */
