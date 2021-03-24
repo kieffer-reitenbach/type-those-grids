@@ -24,7 +24,11 @@ main {
   gap: .75em;
 }
 
-h1, h2 {
+.main {
+  grid-area: columns;
+}
+
+h1, h2, dt {
   font-style: italic;
   font-weight: normal;
 }
