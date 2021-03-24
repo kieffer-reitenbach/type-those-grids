@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
+  align-self: auto;
 }
 
 *, *::before, *::after {
@@ -12,22 +13,14 @@ img {
   width: 100%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-div {
-  grid-area: banner;
-}
-
 main {
   list-style-type: none;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  "banner banner banner"
-  "col1 col2 col3";
+    "banner banner banner"
+    "col1 col2 col3";
   gap: .75em;
 }
 
