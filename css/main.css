@@ -39,6 +39,7 @@ main {
 .col3 {
   grid-area: col3;
 }
+
 h1, h2, dt {
   font-style: italic;
   font-weight: normal;
