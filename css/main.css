@@ -8,22 +8,23 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
-  grid-template-areas:
-  "banner"
-  "main"
 }
 
 .main-grid {
   list-style-type: none;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "banner banner banner"
+  "col1 col2 col3";
   gap: .75em;
 }
 
@@ -39,13 +40,4 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
-
-header {
-  grid-area: banner;
-}
-
-main {
-  grid-area: main;
-}
-
 /* font-family: "Merriweather", serif; */
