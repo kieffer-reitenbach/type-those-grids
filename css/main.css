@@ -24,10 +24,21 @@ main {
   gap: .75em;
 }
 
-.main {
-  grid-area: columns;
+.banner {
+  grid-area: banner;
 }
 
+.col1 {
+  grid-area: col1;
+}
+
+.col2 {
+  grid-area: col2;
+}
+
+.col3 {
+  grid-area: col3;
+}
 h1, h2, dt {
   font-style: italic;
   font-weight: normal;
