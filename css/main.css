@@ -3,6 +3,7 @@ html {
   font-family: Merriweather, serif;
   line-height: 1.5;
   align-self: auto;
+  font-weight: normal;
 }
 
 *, *::before, *::after {
@@ -24,20 +25,22 @@ main {
   gap: .75em;
 }
 
-.banner {
-  grid-area: banner;
-}
-
 .col1 {
   grid-area: col1;
+  padding: 0;
+  margin: 0;
 }
 
 .col2 {
   grid-area: col2;
+  padding: 0;
+  margin: 0;
 }
 
 .col3 {
   grid-area: col3;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, dt {
@@ -47,10 +50,33 @@ h1, h2, dt {
 
 h1 {
   font-size: 1.8rem;
+  margin: 1.5rem 1rem;
 }
 
 h2 {
   font-size: 1.5rem;
+  margin-bottom: -1rem;
+}
+
+dd {
+  margin-left: 1rem;
+}
+
+figcaption {
+  margin: 1rem;
+}
+
+.banner {
+  grid-area: banner;
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
 /* font-family: "Merriweather", serif; */
